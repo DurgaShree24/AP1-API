@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+.result-predict{
+
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    height: 200px;
+    background-color: white;
+
+}
+
+
+.result-heading{
+
+    height: 75px;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: blue;
+    color: white;
+
+}
+
+	</style>
+	<title>Result Page</title>
+</head>
+<body>
+
+	    <br>
+
+	    <div class="result-predict">
+             <br>
+
+
+		{% if prediction == 1%}
+
+		    {{"Real news"}}
+
+
+		 {% elif prediction == 0%}
+
+		    {{"Fake news"}}
+	     
+	    {% endif %}
+          
+	    </div>
+
+</body>
+</html>
